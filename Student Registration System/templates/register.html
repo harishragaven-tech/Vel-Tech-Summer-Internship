@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+
 <nav>
     <h2>Vel Tech University</h2>
     <ul>
@@ -14,31 +15,42 @@
         <li><a href="/about">About</a></li>
     </ul>
 </nav>
+
 <div class="container">
     <h1>Student Registration Form</h1>
-    <form>
-        <label>Student Name</label>
-        <input type="text">
+
+    <form method="POST">
+        <label>Name</label>
+        <input type="text" name="name" required>
+
         <label>Roll Number</label>
-        <input type="text">
+        <input type="text" name="rollno" required>
+
         <label>Department</label>
-        <input type="text">
+        <input type="text" name="department" required>
+
         <label>Year</label>
-        <input type="number">
+        <input type="number" name="year" required>
+
         <label>Email</label>
-        <input type="email">
+        <input type="email" name="email" required>
+
         <label>Phone Number</label>
-        <input type="text">
+        <input type="text" name="phone" required>
+
         <label>Gender</label>
-        <select>
+        <select name="gender">
             <option>Male</option>
             <option>Female</option>
             <option>Other</option>
         </select>
+
         <label>Address</label>
-        <textarea rows="4"></textarea>
+        <textarea name="address" rows="4" required></textarea>
+
         <button type="submit">Register</button>
     </form>
 </div>
+
 </body>
 </html>
