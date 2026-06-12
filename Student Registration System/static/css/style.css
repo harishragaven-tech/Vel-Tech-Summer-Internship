@@ -1,8 +1,9 @@
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    font-family:Arial;
     background:#f4f4f4;
 }
+
 nav{
     background:#003366;
     color:white;
@@ -11,23 +12,28 @@ nav{
     justify-content:space-between;
     align-items:center;
 }
+
 nav ul{
     list-style:none;
     display:flex;
     gap:20px;
 }
+
 nav a{
     color:white;
     text-decoration:none;
 }
+
 nav a:hover{
     color:yellow;
 }
+
 .hero{
     text-align:center;
     padding:80px;
     background:white;
 }
+
 .btn{
     background:#003366;
     color:white;
@@ -35,11 +41,13 @@ nav a:hover{
     text-decoration:none;
     border-radius:5px;
 }
+
 .container{
     width:80%;
     margin:auto;
     padding:20px;
 }
+
 .card{
     background:white;
     padding:20px;
@@ -47,38 +55,43 @@ nav a:hover{
     border-radius:10px;
     box-shadow:0 0 10px gray;
 }
+
 form{
     background:white;
     padding:20px;
     border-radius:10px;
 }
+
 input,select,textarea{
     width:100%;
     padding:10px;
     margin:10px 0;
 }
+
 button{
     background:#003366;
     color:white;
-    padding:10px 20px;
+    padding:10px;
     border:none;
     cursor:pointer;
 }
+
 button:hover{
     background:#0055aa;
 }
+
 table{
     width:100%;
     border-collapse:collapse;
     background:white;
 }
-table,th,td{
-    border:1px solid black;
-}
+
 th,td{
-    padding:12px;
+    border:1px solid black;
+    padding:10px;
     text-align:center;
 }
+
 footer{
     background:#003366;
     color:white;
